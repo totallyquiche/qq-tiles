@@ -1,11 +1,11 @@
 export default class {
-  layers;
+    layers = [];
 
-  constructor(layers) {
-    this.layers = layers;
-  }
+    constructor(layers) {
+        this.addLayers(layers);
+    }
 
-  addLayers(layers) {
-    this.layers.push(...layers);
-  }
+    addLayers(layers) {
+        this.layers.push(...layers);
+    }
 }
